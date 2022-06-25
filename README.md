@@ -1,2 +1,2 @@
 # Primeiro-portfolio
-repositório primeiro portifólio  serio
+repositório primeiro portfolio serio

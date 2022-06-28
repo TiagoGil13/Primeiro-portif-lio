@@ -295,3 +295,33 @@ a:hover {
     justify-content: space-evenly;
     margin: 3rem 0;
 }
+.card-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 90%;
+}
+
+.card {
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    margin: 3rem 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aqua;
+    background-image: url(/assets/img/perfil.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: grayscale(0.5);
+    color: green;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+.card-text {
+    width: 40%;
+    letter-spacing: 1px;
+    color: rpg(109, 109, 109);
+}

@@ -11,10 +11,10 @@ body{
 .header-container {
     height: 100vh;
     width: 100vw;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(37, 37, 37);
     background-image: url(/assets/img/perfil.png);
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: right;
     background-size: contain;
     display: block;
     display: flex;
@@ -27,26 +27,31 @@ body{
 }
 
 h1 {
+    margin-top: 10rem;
+    margin-left: 3.3rem;
     font-size: 50px;
     text-transform: uppercase;
     letter-spacing: 4px;
 }
 
 h2 {
+    margin-top: 3rem;
+    margin-left: 18.3rem;
     text-transform: uppercase;
     letter-spacing: 4px;
 }
 
 .social-media {
-    margin-top: 1rem;
+    margin-top: 15rem;
+    margin-left: 6.4rem;
     display: flex;
 }
 
 .social-media a {
     text-decoration: none;
-    color: rgb(84, 109, 101);
+    color: rgb(27, 105, 31);
     padding: 1rem 4rem;
-    border: 1px solid rgb(0, 0, 0);
+    border: 1px solid rgb(221, 221, 221);
     min-width: 4rem;
     display: flex;
     align-items: center;
@@ -55,7 +60,13 @@ h2 {
 }
 
 a:hover {
-    background-color: rgb(26, 26, 44);
+    background-color: rgba(128, 130, 134, 0.5);
+}
+.social-media::after {
+
+}
+.social-media::before {
+    box-sizing: border-box;
 }
 
 /* menu hamburguer*/
@@ -82,112 +93,7 @@ a:hover {
 .checkbox .trace{
     width: 50px;
     height: 2px;
-    background-color: blueviolet;
-    position: absolute;
-    border-radius: 4px;
-    transition: 0.5s ease-in-out;
-}
-
-.checkbox .trace:nth-child(1) {
-    top: 26px;
-    transform: rotate(0);
-}
-
-.checkbox .trace:nth-child(2) {
-    top: 46px;
-    transform: rotate(0);
-}
-
-.checkbox .trace:nth-child(3) {
-    top: 66px;
-    transform: rotate(0);
-
-}
-@import url('https://fonts.googleapis.com/css2? family= Alegreya+Sans:ital,wght@1,500 & family= Montserrat:wght@200 & display=swap');
-body{
-    margin: 0;
-    padding: 0;
-    font-family:'Alegreya Sans', sans-serif;
-
-    color: rgb(221, 221, 221);
-}
-/* HEADER */
-
-.header-container {
-    height: 100vh;
-    width: 100vw;
-    background-color: rgb(0, 0, 0);
-    background-image: url(/assets/img/perfil.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    display: block;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    box-sizing: border-box;
-    padding: 0 112px;
-    position: relative;
-}
-
-h1 {
-    font-size: 50px;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-}
-
-h2 {
-    text-transform: uppercase;
-    letter-spacing: 4px;
-}
-
-.social-media {
-    margin-top: 1rem;
-    display: flex;
-}
-
-.social-media a {
-    text-decoration: none;
-    color: rgb(84, 109, 101);
-    padding: 1rem 4rem;
-    border: 1px solid rgb(0, 0, 0);
-    min-width: 4rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: .5s ease-in-out;
-}
-
-a:hover {
-    background-color: rgb(26, 26, 44);
-}
-
-/* menu hamburguer*/
-
-.checkbox-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-.checkbox {
-    height: 100px;
-    width: 100px;
-    position: absolute;
-    right: 0;
-    top: 0;
-    display: flex;
-    justify-content: center;
-    cursor: pointer;
-    z-index: 9999;
-    transition: 400ms ease-in-out 0s;
-}
-
-.checkbox .trace{
-    width: 50px;
-    height: 2px;
-    background-color: blueviolet;
+    background-color: rgb(131, 23, 23);
     position: absolute;
     border-radius: 4px;
     transition: 0.5s ease-in-out;
@@ -225,6 +131,7 @@ a:hover {
     z-index: -1;
     transition: 400ms ease-in-out 0s;
 }
+
 .menu-itens {
     position: fixed;
     top: 0;
@@ -246,7 +153,7 @@ a:hover {
 
 .menu-itens ul li a {
     margin: 10px 0;
-    color: aqua;
+    color: rgb(0, 0, 0);
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 4px;
@@ -273,10 +180,10 @@ a:hover {
 }
 
 #toggle:checked + .checkbox {
-    background-color: #f8f8f8;
+    background-color: #790c0c;
 }
 #toggle:checked ~ .menu {
-    box-shadow: 0px 0px 0px 100vmax #f8f8f8;
+    box-shadow: 0px 0px 0px 100vmax #790c0c;
     z-index: 1;
 }
 
@@ -295,6 +202,7 @@ a:hover {
     justify-content: space-evenly;
     margin: 3rem 0;
 }
+
 .card-container {
     display: flex;
     justify-content: space-evenly;
@@ -310,20 +218,20 @@ a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: aqua;
+    background-color: rgb(43, 184, 90);
     background-image: url(/assets/img/perfil.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     filter: grayscale(0.5);
-    color: green;
+    color: rgb(154, 163, 154);
     cursor: pointer;
     transition: 0.5s ease-in-out;
 }
 .card-text {
     width: 40%;
     letter-spacing: 1px;
-     color: rgb(109, 109, 109);
+    color: rgb(109, 109, 109);
 }
 .card-wrapper {
     text-align: center;
